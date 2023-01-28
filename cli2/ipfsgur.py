@@ -10,7 +10,6 @@ from rich.console import Console, OverflowMethod
 from rich.prompt import Prompt, Confirm
 
 from imgrender import render
-from PIL import Image
 
 API = "http://ipfsgur.pythonanywhere.com"
 GATEWAY = "https://ipfs.io/ipfs"
@@ -100,6 +99,8 @@ def uploadFile():
 
     if not Utils.checkIfImage(imagePath):
         exit()
+
+    # TODO: compression
     
     payload = { "public": str(Confirm.ask("show in timeline?")).lower() }
 
