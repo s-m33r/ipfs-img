@@ -1,7 +1,7 @@
 import os
 import json
 import requests
-from sys import argv
+import sys
 from hashlib import md5
 import random
 from mimetypes import guess_type
@@ -47,6 +47,8 @@ Default behaviour:
 
         return True
 
+def exit():
+    sys.exit(0)
 
 def homepage():
     """ displays the homepage """
@@ -137,10 +139,10 @@ def getFile():
 
 
 def main():
-    if not len(argv) > 1:
+    if not len(sys.argv) > 1:
         homepage()
 
-    subcommand = argv[1]
+    subcommand = sys.argv[1]
     match subcommand:
         case "put":
             uploadFile()
