@@ -1,4 +1,4 @@
-# IPFSgur - decentralized, censorship-resistant image hosting with IPFS using Filecoin
+# IPFSgur - decentralized, censorship-resistant image hosting using IPFS and Filecoin
 
 ![a screenshot of IPFSgur CLI displaying the home feed](./screenshot.png)
 
