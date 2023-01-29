@@ -12,7 +12,7 @@ from rich.prompt import Prompt, Confirm
 from imgrender import render
 
 API = "http://ipfsgur.pythonanywhere.com"
-GATEWAY = "https://ipfs.io/ipfs"
+GATEWAY = "https://cloudflare-ipfs.com/ipfs"
 
 console = Console()
 error = Console( style="red bold" )
@@ -69,7 +69,6 @@ def homepage():
         console.rule("IPFSgur")
         for cid in cids:
             url = f"{GATEWAY}/{cid}"
-
             
             # printing preview to console along with CID
             with console.status("fetching image..."):
