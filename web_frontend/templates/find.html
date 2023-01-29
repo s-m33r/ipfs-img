@@ -5,12 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPFSgur</title>
+	<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
 </head>
+
 <body>
-    <h1>Find your image using Content ID</h1><br><br>
-    <form method="post">
+	<div class="container">
+	<h1><center>Find image using Content ID</center></h1>
+	<hr>
+
+	<details>
+		<summary role="button" class="secondary">Content... ID ??</summary>
+		<p>Just like URLs, IPFS uses content IDs to locate data. They look like this: <code>bafkreiggkc4zx7yrtwvpqre2g2vx5y5e2hajevp7sjbkugfei6stteiuka</code>.</p>
+	</details>
+	</div>
+
+	<br>
+    <form method="post" class="container">
         <input type="text" name="cid_name" id="cid_id" placeholder="Enter Content ID here:">
         <button type="submit">Find!</button>
     </form>
+
 </body>
 </html>

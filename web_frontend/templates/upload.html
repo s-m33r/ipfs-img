@@ -5,15 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPFSgur</title>
+	<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
 </head>
+
+<style>
+</style>
+
 <body>
-    <h1>Upload a image</h1>
-    <h2 style="color: red;">Note: IPFS is very slow, Images greater than 100kb takes 1-2 minutes to upload. Please co-operate!</h2>
-    <br><br>
-    <form enctype="multipart/form-data" method="post">
-        Upload your image here: <input type="file" name="file1"><br>
-        Make image public: <input type="checkbox" name="public_name" id="public_id"><br>
-        <input type="submit" value="Upload">
+	<div class="container">
+		<h1>Upload a image</h1>
+    	<h2 style="color: #E74C3C;">Note: Uploading images greater than 100kb may be slow.</h2>
+	</div>
+    <hr>
+
+    <form enctype="multipart/form-data" method="post" class="container">
+		<label>Upload your image here:</label>
+		<input type="file" name="file1">
+		<label for="public_id">
+			<input type="checkbox" name="public_name" id="public_id" role="switch">
+			Make image public
+		</label>
+        <input type="submit" value="Upload" style="margin-top: 20px;">
     </form>
 </body>
 </html>
