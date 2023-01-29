@@ -20,6 +20,10 @@
 		margin: 5px;
 	}
 
+	a {
+		text-decoration: none;
+	}
+
 </style>
 
 <body>
@@ -54,12 +58,20 @@
 		<br>
 		<code><strong>Recent images</strong></code>
 
-    	<ol class="grid">
+		<ol>
     	    {%for i in range(0,len)%}
     	        <article>
-					<a target="_blank" href="{{url+cids[i]}}">
+					<center>
 						<img src="{{url+cids[i]}}" alt="Loading...">
-					</a>
+					</center>
+
+					<footer>
+						<a target="_blank" href="{{url+cids[i]}}" class="secondary">
+							<strong>
+								{{ cids[i] }}
+							</strong>
+						</a>
+					</footer>
 				</article>
     	    {%endfor%}
     	</ol>
