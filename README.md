@@ -1,9 +1,19 @@
 # IPFSgur
 
 ![web homepage](https://i.imgur.com/BQoj7pg.png)
-<a href="https://asciinema.org/a/555433" target="_blank"><img src="https://asciinema.org/a/555433.svg" /></a>
+<a href="https://asciinema.org/a/555433" target="_blank"><img src="https://asciinema.org/a/555433.svg" /></a>  
 
-A decentralised, censorship-resistant image hosting app using IPFS and Filecoin (web3.storage).
+A decentralised, censorship-resistant image hosting service using IPFS and Filecoin (web3.storage).  
+
+This project consists of an API and two frontends for that API - a CLI and a web frontend. Both are built to perform three operations: `upload`, `fetching` and `homepage view`. Users can upload an image and an IPFS content-ID is returned for that image. For the CLI, the homepage is loaded as previews of the images as ASCII art, along with their CIDs.  
+
+**Why IPFS?**  
+IPFS (Inter-Planetary File System) is  
+>A peer-to-peer hypermedia protocol
+>designed to preserve and grow humanity's knowledge
+>by making the web upgradeable, resilient, and more open.  
+
+Read more [here](https://ipfs.tech).  
 
 ## Features
 - Decentralised
@@ -14,7 +24,7 @@ A decentralised, censorship-resistant image hosting app using IPFS and Filecoin 
 
 ## Installation and Usage
 * CLI  
-Download the latest binary release from the Github releases page, then:
+Download the latest binary release (currently available only for Linux) from the Github releases page, then:
 ```
 chmod +x ipfsgur
 ./ipfsgur help
