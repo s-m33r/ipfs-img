@@ -2,6 +2,8 @@
 
 ![web homepage](https://i.imgur.com/BQoj7pg.png)
 <a href="https://asciinema.org/a/555433" target="_blank"><img src="https://asciinema.org/a/555433.svg" /></a>  
+# [web demo video](https://vimeo.com/793806077)  
+## [hosted demo](https://myipfsgur.pythonanywhere.com/)  
 
 A decentralised, censorship-resistant image hosting service using IPFS and Filecoin (web3.storage).  
 
@@ -32,7 +34,7 @@ chmod +x ipfsgur
 
 * Web  
 Hosted demo: [https://myipfsgur.pythonanywhere.com/](https://myipfsgur.pythonanywhere.com/)  
-[demo video](https://vimeo.com/793806077)  
+
 **Screenshots:**  
 ![upload page](https://i.imgur.com/8k93Ha8.png)
 ![find by CID page](https://i.imgur.com/OZqxRGR.png)
