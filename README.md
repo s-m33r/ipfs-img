@@ -1,5 +1,6 @@
 # IPFSgur
 
+![web homepage](https://i.imgur.com/BQoj7pg.png)
 <a href="https://asciinema.org/a/555433" target="_blank"><img src="https://asciinema.org/a/555433.svg" /></a>
 
 A decentralised, censorship-resistant image hosting app using IPFS and Filecoin (web3.storage).
@@ -12,7 +13,7 @@ A decentralised, censorship-resistant image hosting app using IPFS and Filecoin 
 ---
 
 ## Installation and Usage
-* CLI
+* CLI  
 Download the latest binary release from the Github releases page, then:
 ```
 chmod +x ipfsgur
@@ -21,8 +22,10 @@ chmod +x ipfsgur
 
 * Web  
 Hosted demo: [https://myipfsgur.pythonanywhere.com/](https://myipfsgur.pythonanywhere.com/)  
-**Video:**
-[link here]()
+[demo video](https://vimeo.com/793806077)  
+**Screenshots:**  
+![upload page](https://i.imgur.com/8k93Ha8.png)
+![find by CID page](https://i.imgur.com/OZqxRGR.png)
 
 ---
 
@@ -40,4 +43,6 @@ chmod +x dist/ipfsgur
 ./dist/ipfsgur
 ```
 
-## Screenshots
+## Authors
+- [@s-m33r](https://www.github.com/s-m33r)  
+- [@yashasnadigsyn](https://www.github.com/yashasnadigsyn)  
