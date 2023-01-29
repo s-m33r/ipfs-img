@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, render_template, redirect, url_for
-import requests, os
+import requests, os, pathlib
 from PIL import Image
 
 app = Flask(__name__)
@@ -29,6 +29,7 @@ def index():
 @app.route('/upload', methods=['GET', 'POST'])
 def upload_page():
     if request.method == 'POST':
+        pathlib.Path('IMAGES').mkdir(parents=True, exist_ok=True)
         if 'file1' not in request.files:
             return 'No file uploaded!'
         file1 = request.files['file1']
